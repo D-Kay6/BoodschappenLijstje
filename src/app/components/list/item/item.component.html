@@ -1,0 +1,15 @@
+<div class="container py-1 justify-content-center noselect" [ngClass]="item.disabled ? 'inactive' : 'active'">
+  <div class="row align-items-center">
+    <div class="col-auto">{{item.amount}} {{item.scale}}</div>
+    <div class="col">{{item.name}}</div>
+
+    <div class="w-100 d-block d-sm-none"></div>
+    <div *ngIf="!item.disabled" class="col-auto">
+      <button class="btn btn-info" (click)="complete()"><i class="fas fa-check"></i></button>
+    </div>
+    <div class="col d-block d-sm-none"></div>
+    <div class="col-auto">
+      <button class="btn btn-danger" (click)="delete()"><i class="far fa-trash-alt"></i></button>
+    </div>
+  </div>
+</div>

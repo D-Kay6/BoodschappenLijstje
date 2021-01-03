@@ -1,0 +1,15 @@
+.container {
+  border: 2px solid black;
+}
+
+.product-amount {
+  width: 150px;
+}
+
+.product-scale {
+  width: 200px;
+}
+
+.btn-form {
+  width: 100px;
+}

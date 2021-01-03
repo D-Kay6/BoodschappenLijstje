@@ -1,0 +1,5 @@
+<div *ngIf="products.length > 0" cdkDropList (cdkDropListDropped)="drop($event)">
+  <div *ngFor="let product of products" cdkDrag [cdkDragDisabled]="product.disabled">
+    <list-item [item]="product"></list-item>
+  </div>
+</div>
